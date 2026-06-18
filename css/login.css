@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    min-height:100vh;
+
+    overflow:hidden;
+}
+
+.login-container{
+
+    display:flex;
+
+    min-height:100vh;
+}
+
+/* LEFT */
+
+.left-panel{
+
+    flex:1;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.6)
+    ),
+
+    url('../images/about.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.content{
+
+    text-align:center;
+
+    color:white;
+
+    z-index:2;
+}
+
+.content h1{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:4rem;
+}
+
+.content p{
+
+    font-size:1.3rem;
+}
+
+/* RIGHT */
+
+.right-panel{
+
+    flex:1;
+
+    background:#f8fafc;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+
+    width:450px;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.1);
+}
+
+.login-card h2{
+
+    color:#0A2540;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:3rem;
+}
+
+.subtitle{
+
+    color:#666;
+
+    margin-bottom:25px;
+}
+
+.nav-pills .nav-link{
+
+    border-radius:50px;
+
+    margin-right:10px;
+}
+
+.nav-pills .nav-link.active{
+
+    background:#0A2540;
+}
+
+.form-control{
+
+    padding:15px;
+
+    border-radius:12px;
+}
+
+.login-btn{
+
+    width:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0A2540,
+        #B8860B
+    );
+
+    color:white;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:all 0.4s ease;
+}
+
+.login-btn:hover{
+
+    opacity:0.9;
+    background:white;
+
+    color:#0A2540;
+
+    border:2px solid #D4AF37;
+
+    transform:
+    translateY(-4px)
+    scale(1.02);
+
+    box-shadow:
+    0 12px 30px rgba(212,175,55,0.25);
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+    .left-panel{
+
+        display:none;
+    }
+
+    .right-panel{
+
+        flex:100%;
+    }
+
+    .login-card{
+
+        width:90%;
+    }
+}
+
+/* ========================= */
+/* LOGIN LOGO */
+/* ========================= */
+
+.login-logo{
+
+    width:90px;
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #D4AF37;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s ease;
+}
+
+.login-logo:hover{
+
+    transform:scale(1.05);
+}
+
